@@ -1,15 +1,15 @@
 import React from "react";
 import "./App.css";
 
-function App() {
+import PhotoApi from "./components/photoApi";
+
+export default function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      
+      <PhotoApi />
     </div>
   );
 }
 
-export default App;
+
