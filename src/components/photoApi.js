@@ -1,6 +1,17 @@
 import React, {useState, useEffect} from "react";
 import PhotoCard from "./photoCard";
 import axios from "axios";
+import styled from "styled-components";
+
+const CardApi = styled.div`    
+// width: 50%;
+align-items: center;
+margin: 5%;
+display: flex;
+justify-content: center
+
+`;
+
 
 export default function PhotoTable() {
  const [photo, setPhoto] = useState([]);
@@ -17,13 +28,14 @@ export default function PhotoTable() {
     }, []);
     
   return (
-    <div>
+    <CardApi>
       <PhotoCard 
       key={photo.index} 
       hdurl={photo.hdurl} 
       explanation={photo.explanation} 
-      date={photo.date} title={photo.title}/>
-    </div>
+      date={photo.date} 
+      title={photo.title}/>
+    </CardApi>
   );
 }
 
