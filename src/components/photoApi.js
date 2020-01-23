@@ -9,7 +9,7 @@ align-items: center;
 margin: 5%;
 display: flex;
 justify-content: center
-
+border: 5px solid black;
 `;
 
 

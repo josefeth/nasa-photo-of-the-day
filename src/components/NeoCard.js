@@ -2,7 +2,7 @@ import React from "react";
 
 
 export default function NeoCard(props) {
-
+    console.log('neocard', props)
     return (
         
     <div>      
@@ -16,4 +16,5 @@ export default function NeoCard(props) {
     </div>
         
     )
+
 } 
